@@ -27,7 +27,7 @@ const cleanBoxes = amount => {
   divBoxesRef.innerHTML = '';
 }
 
- 
+ refs.input.addEventListener('keypress', cleanBoxes);
 
 const destroyBoxes = () => {
   divBoxesRef.innerHTML = '';
@@ -40,7 +40,7 @@ refs.buttonRender.addEventListener('click', () => {
   createBoxes(refs.input.value);
 });
 
-refs.bigBox.addEventListener('click', cleanBoxes);
+refs.bigBox.addEventListener('clic', cleanBoxes);
 
 refs.buttonDestroy.addEventListener('click', destroyBoxes);
 
