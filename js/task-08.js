@@ -36,7 +36,9 @@ const destroyBoxes = () => {
 const divBoxesRef = document.querySelector('#boxes');
 
 
-refs.buttonRender.addEventListener('click', createBoxes);
+refs.buttonRender.addEventListener('click', () => {
+  createBoxes(refs.input.value);
+});
 
 refs.bigBox.addEventListener('click', cleanBoxes);
 
